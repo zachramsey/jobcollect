@@ -1,4 +1,4 @@
 from .proxy import PROXY
-from .scraper import job_scraper
+from .scraper import job_collector
 
-__all__ = ["PROXY", "job_scraper"]
+__all__ = ["PROXY", "job_collector"]

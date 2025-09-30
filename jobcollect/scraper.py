@@ -29,7 +29,7 @@ def terms_to_regex(terms: list) -> str:
     return "|".join(terms)
 
 
-def job_scraper(
+def job_collector(
         proxy: str,
         results_wanted: int,
         hours_old: int,

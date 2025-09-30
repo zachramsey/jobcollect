@@ -1,7 +1,7 @@
-from jobscrape import job_scraper, PROXY  # type: ignore
+from jobcollect import job_collector, PROXY  # type: ignore
 
 
-results_wanted = 500
+results_wanted = 1000
 hours_old = 48
 
 locations = ["United States"]
@@ -39,7 +39,7 @@ descr_exclude = ["LangChain", "LlamaIndex", "OpenAI API", "Haystack",
 
 if __name__ == "__main__":
     for group, (search_include, search_exclude) in search.items():
-        job_scraper(
+        job_collector(
             proxy=PROXY,
             results_wanted=results_wanted,
             hours_old=hours_old,
